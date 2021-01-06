@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import useCart from "./useCart";
 
 const items = [
   { name: "유칼립투스", quantity: 1, price: 48000, isChecked: false },
@@ -7,47 +8,24 @@ const items = [
   { name: "옥스포드", quantity: 1, price: 23000, isChecked: false },
 ];
 
+const style = { width: "80px" };
+
 export default function Index() {
-  const [cart, setCart] = useState(items);
-
-  const totalQuantity = sumQuantity(cart);
-  const totalPrice = sumPrice(cart);
-
-  const handleQuantity = (sign, targetIdx) => {
-    const count = sign === "+" ? 1 : -1;
-
-    const updatedCarts = cart.map((item, idx) =>
-      updateCart(item, idx, "quantity", item["quantity"] + count, targetIdx)
-    );
-
-    setCart(updatedCarts);
-  };
-
-  const handleCheck = targetIdx => {
-    const updatedCarts = cart.map((item, idx) =>
-      updateCart(item, idx, "isChecked", !item.isChecked, targetIdx)
-    );
-    setCart(updatedCarts);
-  };
-
-  const allOrNothing = () => {
-    const isAllChecked = cart.every(item => item.isChecked);
-
-    setCart(cart.map(item => ({ ...item, isChecked: !isAllChecked })));
-  };
+  const [cart, setCart, { totalPrice, totalQuantity }] = useCart(items);
 
   return (
     <div>
       <tr>
-        <td style={{ width: "50px" }}>체크</td>
-        <td style={{ width: "100px" }}>이름</td>
-        <td style={{ width: "100px" }}>수량</td>
-        <td style={{ width: "100px" }}>가격</td>
+        <td style={style}>체크</td>
+        <td style={style}>이름</td>
+        <td style={style}>수량</td>
+        <td style={style}>가격</td>
       </tr>
       <tr>
         <input
           type="checkbox"
-          onClick={allOrNothing}
+          data-type="checkbox-all"
+          onClick={setCart}
           checked={cart.every(item => item.isChecked)}
         />
       </tr>
@@ -56,15 +34,21 @@ export default function Index() {
           <td>
             <input
               type="checkbox"
-              onClick={() => handleCheck(idx)}
+              data-type="checkbox"
+              data-idx={idx}
+              onClick={setCart}
               checked={item.isChecked}
             />
           </td>
           <td>{item.name}</td>
           <td>
-            <button onClick={() => handleQuantity("-", idx)}>-</button>
+            <button data-type="calc" data-idx={idx} onClick={setCart}>
+              -
+            </button>
             {item.quantity}
-            <button onClick={() => handleQuantity("+", idx)}>+</button>
+            <button data-type="calc" data-idx={idx} onClick={setCart}>
+              +
+            </button>
           </td>
           <td>{item.price}</td>
         </tr>
@@ -74,22 +58,3 @@ export default function Index() {
     </div>
   );
 }
-
-const sumQuantity = arr => {
-  return arr.reduce((acc, { quantity, isChecked }) => {
-    if (!isChecked) return acc;
-    return acc + quantity;
-  }, 0);
-};
-
-const sumPrice = arr => {
-  return arr.reduce((acc, { quantity, price, isChecked }) => {
-    if (!isChecked) return acc;
-    return acc + quantity * price;
-  }, 0);
-};
-
-const updateCart = (item, idx, key, action, targetIdx) => {
-  if (idx !== targetIdx) return item;
-  return { ...item, [key]: action };
-};
