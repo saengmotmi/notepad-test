@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {
   ApolloProvider,
   ApolloClient,
+  ApolloLink,
   InMemoryCache,
   createHttpLink,
 } from "@apollo/client";
@@ -13,20 +14,30 @@ import State from "./statePropsEvent";
 import Parent from "./Lifecycle/Parents";
 import Apollo from "./ApolloAdmin";
 import Antd from "./Antd";
+import Mason from "./Mason";
+import Weird from "./WeirdSetState";
+import Spotify from "./Spotify";
+import SpotifyLogin from "./Spotify/Login";
+import WebAudio from "./WebAudio";
+import Cart from "./Cart";
 
 // import { setContext } from "apollo-link-context";
 import { setContext } from "@apollo/client/link/context";
 
-let token;
-const authLink = setContext((_, { headers }) => {
-  const token = localStorage.getItem(token);
-  console.log("token", token);
-  return {
-    headers: {
-      ...headers,
-      authorization: token ? `Bearer ${token}` : "",
-    },
-  };
+const authLink = new ApolloLink(async (operation, forward) => {
+  const res = await new Promise((resolve, reject) => {
+    // async action
+    // client.mutate()
+    setTimeout(() => {
+      resolve("auth success");
+    }, 2000);
+  });
+
+  if (res) {
+    const prevContext = operation.getContext();
+    operation.setContext({ ...prevContext, headers: "" });
+    return forward(operation);
+  }
 });
 
 const cache = new InMemoryCache();
@@ -35,11 +46,8 @@ const link = createHttpLink({
 });
 const client = new ApolloClient({
   cache,
-  link: authLink.concat(link),
+  link: ApolloLink.from([authLink, link]),
 });
-
-console.log("client", client);
-console.log("client", client.link.request());
 
 class Routes extends React.Component {
   render() {
@@ -55,6 +63,12 @@ class Routes extends React.Component {
               <Route exact path="/lifecycle" component={Parent} />
               <Route exact path="/apollo" component={Apollo} />
               <Route exact path="/antd" component={Antd} />
+              <Route exact path="/mason" component={Mason} />
+              <Route exact path="/weird" component={Weird} />
+              <Route exact path="/spotifyLogin" component={SpotifyLogin} />
+              <Route exact path="/spotify" component={Spotify} />
+              <Route exact path="/audio" component={WebAudio} />
+              <Route exact path="/cart" component={Cart} />
             </Switch>
           </ErrorCatcher>
         </Router>

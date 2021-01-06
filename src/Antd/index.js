@@ -1,51 +1,61 @@
 import React, { useState, useEffect } from "react";
-import { Button, Checkbox, Col, Row } from "antd";
+import moment from "moment";
+import { Button, Checkbox, Col, Row, DatePicker } from "antd";
 
 export default function Index() {
-  const [loading, setLoading] = useState(false);
-  const [checked, setChecked] = useState({});
+  const [currentIdx, setCurrentIdx] = useState(0);
+  const [rangeDate, setRangeDate] = useState(["", ""]);
 
-  const loadingTest = () => {
-    setTimeout(() => {
-      setLoading(true);
-      setTimeout(() => {
-        setLoading(false);
-      }, 3000);
-    });
+  const handleIndex = e => {
+    const [idx, btnType] = e.currentTarget.dataset.idx.split(",");
+
+    if (+idx === currentIdx) {
+      setCurrentIdx(0);
+      setRangeDate(["", ""]);
+      return;
+    }
+    setCurrentIdx(+idx);
+    setRangeDate(buttonTypeTodate(btnType));
   };
 
-  const consoleCheck = (e, idx) => {
-    console.log(e.target.checked, idx);
-    setChecked({ ...checked, [idx]: !e.target.value });
-  };
+  const buttonTypeTodate = type => {
+    const today = moment();
+    const startOf = () => today.clone().startOf(type);
+    const endOf = () => today.clone().endOf(type);
 
-  useEffect(() => {
-    console.log(checked);
-  }, [checked]);
+    const typeTable = {
+      today: [today, today],
+      week: [startOf(), endOf()],
+      month: [startOf(), endOf()],
+    };
+
+    return typeTable[type];
+  };
 
   return (
     <div style={style}>
-      <div>
-        <Button type="primary" loading={loading} onClick={loadingTest}>
-          버튼입니다
-        </Button>
-        <Button type="secondary">버튼입니다</Button>
-      </div>
-      <div>
-        <Checkbox.Group>
-          <Row>
-            {[...Array(3)].map((_, idx) => {
-              return (
-                <Col key={idx} span={8}>
-                  <Checkbox value={idx} onClick={e => consoleCheck(e, idx)}>
-                    체크 {idx + 1}
-                  </Checkbox>
-                </Col>
-              );
-            })}
-          </Row>
-        </Checkbox.Group>
-      </div>
+      <DatePicker.RangePicker onChange={setRangeDate} value={rangeDate} />
+      <Button
+        type={currentIdx === 1 && "primary"}
+        data-idx={[1, "today"]}
+        onClick={handleIndex}
+      >
+        오늘
+      </Button>
+      <Button
+        type={currentIdx === 2 && "primary"}
+        data-idx={[2, "week"]}
+        onClick={handleIndex}
+      >
+        이번 주
+      </Button>
+      <Button
+        type={currentIdx === 3 && "primary"}
+        data-idx={[3, "month"]}
+        onClick={handleIndex}
+      >
+        이번 달
+      </Button>
     </div>
   );
 }
@@ -53,7 +63,7 @@ export default function Index() {
 const style = {
   height: "100vh",
   display: "flex",
-  flexDirection: "column",
+  flexDirection: "row",
   justifyContent: "center",
   alignItems: "center",
 };
