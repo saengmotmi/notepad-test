@@ -20,6 +20,7 @@ import Spotify from "./Spotify";
 import SpotifyLogin from "./Spotify/Login";
 import WebAudio from "./WebAudio";
 import Cart from "./Cart";
+import KakaoMap from "./KakaoMap";
 
 // import { setContext } from "apollo-link-context";
 import { setContext } from "@apollo/client/link/context";
@@ -69,6 +70,7 @@ class Routes extends React.Component {
               <Route exact path="/spotify" component={Spotify} />
               <Route exact path="/audio" component={WebAudio} />
               <Route exact path="/cart" component={Cart} />
+              <Route exact path="/kakaomap" component={KakaoMap} />
             </Switch>
           </ErrorCatcher>
         </Router>
