@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 
 export default (init = []) => {
   const [cart, setCart] = useState(init);
@@ -26,10 +26,14 @@ export default (init = []) => {
     setCart(updatedCart);
   };
 
+  const sumQuantityMemo = useCallback(sumQuantity, [cart]);
+  const sumPriceMemo = useCallback(sumPrice, [cart]);
+  const updateCartMemo = useCallback(updateCart, [cart]);
+
   const handleQuantity = e => {
     const count = e.target.innerText === "+" ? 1 : -1;
 
-    updateCart(
+    updateCartMemo(
       "quantity",
       (item, key) => item[key] + count,
       +e.target.dataset.idx
@@ -37,10 +41,14 @@ export default (init = []) => {
   };
 
   const handleCheck = e => {
-    updateCart("isChecked", (item, key) => !item[key], +e.target.dataset.idx);
+    updateCartMemo(
+      "isChecked",
+      (item, key) => !item[key],
+      +e.target.dataset.idx
+    );
   };
 
-  const allOrNothing = () => {
+  const handleAllChecked = () => {
     const isAllChecked = cart.every(item => item.isChecked);
 
     setCart(cart.map(item => ({ ...item, isChecked: !isAllChecked })));
@@ -52,19 +60,21 @@ export default (init = []) => {
 
     const setFunction = {
       BUTTON: {
-        calc: handleQuantity,
+        quantity: handleQuantity,
       },
       INPUT: {
-        "checkbox-all": allOrNothing,
-        checkbox: handleCheck,
+        "checkbox-all": handleAllChecked,
+        "checkbox-item": handleCheck,
       },
     };
 
     return setFunction[tag][type](e);
   };
 
-  const totalQuantity = sumQuantity();
-  const totalPrice = sumPrice();
+  const calc = {
+    totalPrice: sumQuantityMemo(),
+    totalQuantity: sumPriceMemo(),
+  };
 
-  return [cart, reducer, { totalPrice, totalQuantity }];
+  return [cart, reducer, calc];
 };

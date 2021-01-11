@@ -1,0 +1,763 @@
+{
+  "homes_count": 15,
+  "avg_price": 59000.0,
+  "homes": [
+    {
+      "home_id": 1,
+      "home_name": "#2BB 강남구 Room(다인실)",
+      "home_capacity": 2,
+      "home_type": "다인실",
+      "home_building": "아파트",
+      "home_images": [
+        "https://images.unsplash.com/photo-1574120582582-257909933c5f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODl8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1560448075-bb485b067938?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fGJhdGhyb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1532372576444-dda954194ad0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGxpdmluZyUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1556909211-36987daf7b4d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fGtpdGNoZW58ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1575517220118-57eaf432e1d9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzR8fGJhbGNvbnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 1,
+        "침대": 1,
+        "욕실": 0
+      },
+      "home_facilities": [
+        "샴푸",
+        "헤어드라이어",
+        "필수품목(침대시트, 베개)",
+        "건조기",
+        "기본 조리도구(냄비, 후라이팬, 기름, 소금, 후추)",
+        "식기류",
+        "가스레인지 또는 인덕션",
+        "냉장고",
+        "냉장고",
+        "업무 전용 공간",
+        "게스트 전용 출입문(별도의 출입로 또는 건물 입구)",
+        "화재경보기(숙소에 화재경보기가 없습니다)"
+      ],
+      "home_latitude": "37.492230",
+      "home_longitutde": "127.077133",
+      "price": {
+        "1박비용": 69000,
+        "1인당가격증가율": 11000,
+        "청소비": 18000,
+        "서비스수수료": 0,
+        "숙박세와수수료": 0
+      },
+      "home_region": {
+        "region_name": "강남구",
+        "region_latitude": "37.492465",
+        "region_longtitude": "127.068818",
+        "region_radius_m": 8000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 2,
+      "home_name": "#코로나대비#완전방역#강남구 도보5분거리#행복숙박",
+      "home_capacity": 0,
+      "home_type": "집 전체",
+      "home_building": "아파트",
+      "home_images": [
+        "https://images.unsplash.com/photo-1584116831190-7a5b2765a30a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/flagged/photo-1600002368144-444430d3f3ca?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGJhdGhyb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1545454760-a8e55231441c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDh8fGxpdmluZyUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1556037843-347ddff9f4b0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8a2l0Y2hlbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1564829439675-0eec72f0b695?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8YmFsY29ueXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 1,
+        "침대": 1,
+        "욕실": 0
+      },
+      "home_facilities": [
+        "온수",
+        "샴푸",
+        "옷걸이",
+        "필수품목(침대시트, 베개)",
+        "건조기",
+        "다리미",
+        "식기류",
+        "기본 조리도구(냄비, 후라이팬, 기름, 소금, 후추)",
+        "기본 조리도구(냄비, 후라이팬, 기름, 소금, 후추)",
+        "게스트 전용 출입문(별도의 출입로 또는 건물 입구)",
+        "디지털 도어록(게스트가 현관문 비밀번호를 입력하여 직접 체크인 합니다)"
+      ],
+      "home_latitude": "37.504660",
+      "home_longitutde": "127.038682",
+      "price": {
+        "1박비용": 44000,
+        "1인당가격증가율": 11000,
+        "청소비": 12000,
+        "서비스수수료": 10000,
+        "숙박세와수수료": 0
+      },
+      "home_region": {
+        "region_name": "강남구",
+        "region_latitude": "37.492465",
+        "region_longtitude": "127.068818",
+        "region_radius_m": 8000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 3,
+      "home_name": "[NEW]강남구 / 1.5룸 / 아늑하고 예쁜 집",
+      "home_capacity": 4,
+      "home_type": "다인실",
+      "home_building": "방갈로",
+      "home_images": [
+        "https://images.unsplash.com/photo-1444201983204-c43cbd584d93?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDZ8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1540760411570-069218ffb061?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhdGhyb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1553881651-43348b2ca74e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fGxpdmluZyUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1538944570562-2c9cb7857097?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fGtpdGNoZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1519245942243-02935e6bdb76?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDB8fGJhbGNvbnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 3,
+        "침대": 3,
+        "욕실": 1
+      },
+      "home_facilities": [
+        "온수",
+        "필수품목(비누, 화장지, 치약)",
+        "헤어드라이어",
+        "샴푸",
+        "건조기",
+        "필수품목(침대시트, 베개)",
+        "주방(게스트가 요리를 할 수 있는 공간)",
+        "가스레인지 또는 인덕션",
+        "기본 조리도구(냄비, 후라이팬, 기름, 소금, 후추)",
+        "기본 조리도구(냄비, 후라이팬, 기름, 소금, 후추)",
+        "업무 전용 공간",
+        "게스트 전용 출입문(별도의 출입로 또는 건물 입구)"
+      ],
+      "home_latitude": "37.502564",
+      "home_longitutde": "127.052939",
+      "price": {
+        "1박비용": 37000,
+        "1인당가격증가율": 14000,
+        "청소비": 11000,
+        "서비스수수료": 0,
+        "숙박세와수수료": 45000
+      },
+      "home_region": {
+        "region_name": "강남구",
+        "region_latitude": "37.492465",
+        "region_longtitude": "127.068818",
+        "region_radius_m": 8000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 4,
+      "home_name": "★Home Camping in seoul/강남구 위치/ 방역,소독진행중",
+      "home_capacity": 3,
+      "home_type": "집 전체",
+      "home_building": "호스텔",
+      "home_images": [
+        "https://images.unsplash.com/photo-1572496973076-dc34056ceb87?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODZ8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1540760411570-069218ffb061?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJhdGhyb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1603794067602-9feaa4f70e0c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDF8fGxpdmluZyUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1495521821757-a1efb6729352?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTZ8fGtpdGNoZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1574837462446-49269a1658cd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzR8fGJhbGNvbnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 2,
+        "침대": 4,
+        "욕실": 1
+      },
+      "home_facilities": [
+        "온수",
+        "필수품목(비누, 화장지, 치약)",
+        "샴푸",
+        "헤어드라이어",
+        "건조기",
+        "옷걸이",
+        "다리미",
+        "TV",
+        "가스레인지 또는 인덕션",
+        "전자레인지",
+        "냉장고",
+        "기본 조리도구(냄비, 후라이팬, 기름, 소금, 후추)",
+        "기본 조리도구(냄비, 후라이팬, 기름, 소금, 후추)",
+        "일산화탄소 경보기(숙소에 일산화탄소 경보기가 없습니다)"
+      ],
+      "home_latitude": "37.510446",
+      "home_longitutde": "127.033949",
+      "price": {
+        "1박비용": 75000,
+        "1인당가격증가율": 10000,
+        "청소비": 11000,
+        "서비스수수료": 0,
+        "숙박세와수수료": 10000
+      },
+      "home_region": {
+        "region_name": "강남구",
+        "region_latitude": "37.492465",
+        "region_longtitude": "127.068818",
+        "region_radius_m": 8000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 5,
+      "home_name": "!!배그!! 롤!!겜캉스2탄 강남구 pc숙소/최고사양 커플PC",
+      "home_capacity": 1,
+      "home_type": "호텔객실",
+      "home_building": "전원주택",
+      "home_images": [
+        "https://images.unsplash.com/photo-1553444836-bc6c8d340ba7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTIyfHxiZWQlMjByb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1531125227120-bac862d2aeb9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8YmF0aHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1539693010221-cd218dfe6565?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fGxpdmluZyUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1598546720078-8659863bc47d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjZ8fGtpdGNoZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1560448204-444f743ef6e7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTY0fHxiYWxjb255fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 4,
+        "침대": 4,
+        "욕실": 3
+      },
+      "home_facilities": [
+        "온수",
+        "필수품목(비누, 화장지, 치약)",
+        "샴푸",
+        "주방(게스트가 요리를 할 수 있는 공간)",
+        "다리미",
+        "옷걸이",
+        "가스레인지 또는 인덕션",
+        "TV",
+        "식기류",
+        "식기류",
+        "무선 인터넷(숙소 전체 사용 가능)",
+        "게스트 전용 출입문(별도의 출입로 또는 건물 입구)",
+        "업무 전용 공간",
+        "디지털 도어록(게스트가 현관문 비밀번호를 입력하여 직접 체크인 합니다)"
+      ],
+      "home_latitude": "37.481866",
+      "home_longitutde": "127.058166",
+      "price": {
+        "1박비용": 36000,
+        "1인당가격증가율": 7000,
+        "청소비": 27000,
+        "서비스수수료": 10000,
+        "숙박세와수수료": 40000
+      },
+      "home_region": {
+        "region_name": "강남구",
+        "region_latitude": "37.492465",
+        "region_longtitude": "127.068818",
+        "region_radius_m": 8000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 6,
+      "home_name": "#0좋은 집 전체 코로나 걱정마세요 강동구,리조트 corona Don't worry",
+      "home_capacity": 4,
+      "home_type": "집 전체",
+      "home_building": "리조트",
+      "home_images": [
+        "https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzh8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1570572134645-37415323bc9f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTE0fHxiZWQlMjByb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YmF0aHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGxpdmluZyUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1582913130063-8318329a94a3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGtpdGNoZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1536303061366-0ae7772cd60c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fGJhbGNvbnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 1,
+        "침대": 1,
+        "욕실": 0
+      },
+      "home_facilities": [
+        "샴푸",
+        "헤어드라이어",
+        "필수품목(비누, 화장지, 치약)",
+        "온수",
+        "세탁기",
+        "다리미",
+        "건조기",
+        "옷걸이",
+        "필수품목(침대시트, 베개)",
+        "식기류",
+        "TV",
+        "TV",
+        "화재경보기(숙소에 화재경보기가 없습니다)"
+      ],
+      "home_latitude": "37.539517",
+      "home_longitutde": "127.147360",
+      "price": {
+        "1박비용": 74000,
+        "1인당가격증가율": 7000,
+        "청소비": 18000,
+        "서비스수수료": 0,
+        "숙박세와수수료": 15000
+      },
+      "home_region": {
+        "region_name": "강동구",
+        "region_latitude": "37.547295",
+        "region_longtitude": "127.146555",
+        "region_radius_m": 6000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 7,
+      "home_name": "[NEW]강동구 / 1.5룸 / 아늑하고 예쁜 집",
+      "home_capacity": 1,
+      "home_type": "집 전체",
+      "home_building": "게스트 스위트",
+      "home_images": [
+        "https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nzh8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8YmF0aHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1486946255434-2466348c2166?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjN8fGxpdmluZyUyMHJvb218ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1475250365338-5784b5ef4cea?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTl8fGtpdGNoZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1486484290742-0ce4eb743a34?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFsY29ueXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 4,
+        "침대": 4,
+        "욕실": 0
+      },
+      "home_facilities": [
+        "필수품목(비누, 화장지, 치약)",
+        "샴푸",
+        "필수품목(침대시트, 베개)",
+        "옷걸이",
+        "식기류",
+        "전자레인지",
+        "전자레인지",
+        "업무 전용 공간"
+      ],
+      "home_latitude": "37.557541",
+      "home_longitutde": "127.150321",
+      "price": {
+        "1박비용": 72000,
+        "1인당가격증가율": 10000,
+        "청소비": 20000,
+        "서비스수수료": 0,
+        "숙박세와수수료": 5000
+      },
+      "home_region": {
+        "region_name": "강동구",
+        "region_latitude": "37.547295",
+        "region_longtitude": "127.146555",
+        "region_radius_m": 6000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 8,
+      "home_name": "연박 할인! 강동구 중심위치 빈티지 하우스 호텔객실",
+      "home_capacity": 3,
+      "home_type": "호텔객실",
+      "home_building": "주택",
+      "home_images": [
+        "https://images.unsplash.com/photo-1572891086295-6c1c7c476549?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1577975142952-221c53e51a10?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVkJTIwcm9vbXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1571780995335-8dae43499334?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8YmF0aHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1582417759873-521f076bef49?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDJ8fGxpdmluZyUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1529423374493-8b2f78fd2437?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjN8fGtpdGNoZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1600776216872-b39b2a3dd995?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjExfHxiYWxjb255fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 2,
+        "침대": 4,
+        "욕실": 1
+      },
+      "home_facilities": [
+        "헤어드라이어",
+        "온수",
+        "샴푸",
+        "옷걸이",
+        "건조기",
+        "필수품목(침대시트, 베개)",
+        "세탁기",
+        "주방(게스트가 요리를 할 수 있는 공간)",
+        "TV",
+        "식기류",
+        "식기류",
+        "에어컨",
+        "게스트 전용 출입문(별도의 출입로 또는 건물 입구)",
+        "업무 전용 공간",
+        "화재경보기(숙소에 화재경보기가 없습니다)"
+      ],
+      "home_latitude": "37.559813",
+      "home_longitutde": "127.164011",
+      "price": {
+        "1박비용": 61000,
+        "1인당가격증가율": 7000,
+        "청소비": 27000,
+        "서비스수수료": 0,
+        "숙박세와수수료": 10000
+      },
+      "home_region": {
+        "region_name": "강동구",
+        "region_latitude": "37.547295",
+        "region_longtitude": "127.146555",
+        "region_radius_m": 6000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 9,
+      "home_name": "★Home Camping in seoul/강동구 위치/ 방역,소독진행중",
+      "home_capacity": 3,
+      "home_type": "호텔객실",
+      "home_building": "방갈로",
+      "home_images": [
+        "https://images.unsplash.com/photo-1576675784201-0e142b423952?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODh8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1560067174-e553b3647603?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1587201661650-51acf5b93abc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGJhdGhyb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1589834390005-5d4fb9bf3d32?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8bGl2aW5nJTIwcm9vbXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1556912173-46c336c7fd55?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8a2l0Y2hlbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1575517220118-57eaf432e1d9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzR8fGJhbGNvbnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 3,
+        "침대": 6,
+        "욕실": 1
+      },
+      "home_facilities": [
+        "온수",
+        "필수품목(비누, 화장지, 치약)",
+        "필수품목(침대시트, 베개)",
+        "세탁기",
+        "TV",
+        "가스레인지 또는 인덕션",
+        "냉장고",
+        "기본 조리도구(냄비, 후라이팬, 기름, 소금, 후추)",
+        "식기류",
+        "식기류",
+        "게스트 전용 출입문(별도의 출입로 또는 건물 입구)"
+      ],
+      "home_latitude": "37.558261",
+      "home_longitutde": "127.134066",
+      "price": {
+        "1박비용": 36000,
+        "1인당가격증가율": 12000,
+        "청소비": 11000,
+        "서비스수수료": 0,
+        "숙박세와수수료": 30000
+      },
+      "home_region": {
+        "region_name": "강동구",
+        "region_latitude": "37.547295",
+        "region_longtitude": "127.146555",
+        "region_radius_m": 6000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 10,
+      "home_name": "#16승재오피스텔, 강동구 집 전체Superior Twin #16",
+      "home_capacity": 0,
+      "home_type": "집 전체",
+      "home_building": "타운하우스",
+      "home_images": [
+        "https://images.unsplash.com/photo-1559599242-651c4e085efb?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxiZWQlMjByb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1570054417025-2fa787c4c8f6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1561817223-f67e69e6bd6a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fGJhdGhyb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1571673638846-2adffccdc689?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fGxpdmluZyUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1529423374493-8b2f78fd2437?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjN8fGtpdGNoZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1597459759580-43b00762cc7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTF8fGJhbGNvbnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 1,
+        "침대": 1,
+        "욕실": 0
+      },
+      "home_facilities": [
+        "헤어드라이어",
+        "샴푸",
+        "온수",
+        "필수품목(비누, 화장지, 치약)",
+        "건조기",
+        "옷걸이",
+        "다리미",
+        "주방(게스트가 요리를 할 수 있는 공간)",
+        "세탁기",
+        "전자레인지",
+        "기본 조리도구(냄비, 후라이팬, 기름, 소금, 후추)",
+        "식기류",
+        "TV",
+        "냉장고",
+        "냉장고",
+        "업무 전용 공간",
+        "장기 숙박 가능(28일 이상 숙박 가능)"
+      ],
+      "home_latitude": "37.531822",
+      "home_longitutde": "127.130422",
+      "price": {
+        "1박비용": 57000,
+        "1인당가격증가율": 13000,
+        "청소비": 14000,
+        "서비스수수료": 0,
+        "숙박세와수수료": 0
+      },
+      "home_region": {
+        "region_name": "강동구",
+        "region_latitude": "37.547295",
+        "region_longtitude": "127.146555",
+        "region_radius_m": 6000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 11,
+      "home_name": "#0좋은 집 전체 코로나 걱정마세요 강서구,전원주택 corona Don't worry",
+      "home_capacity": 2,
+      "home_type": "집 전체",
+      "home_building": "전원주택",
+      "home_images": [
+        "https://images.unsplash.com/photo-1593006526979-5f8814c229f9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjA3fHxiZWQlMjByb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/flagged/photo-1600002368144-444430d3f3ca?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGJhdGhyb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1547166812-0fca6370dc03?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fGxpdmluZyUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1556911220-bff31c812dba?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8a2l0Y2hlbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1458078066823-201a0fe98c8a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjN8fGJhbGNvbnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 2,
+        "침대": 2,
+        "욕실": 0
+      },
+      "home_facilities": [
+        "필수품목(비누, 화장지, 치약)",
+        "헤어드라이어",
+        "주방(게스트가 요리를 할 수 있는 공간)",
+        "세탁기",
+        "식기류",
+        "가스레인지 또는 인덕션",
+        "냉장고",
+        "TV",
+        "TV",
+        "선풍기"
+      ],
+      "home_latitude": "37.554466",
+      "home_longitutde": "126.867642",
+      "price": {
+        "1박비용": 68000,
+        "1인당가격증가율": 10000,
+        "청소비": 22000,
+        "서비스수수료": 10000,
+        "숙박세와수수료": 25000
+      },
+      "home_region": {
+        "region_name": "강서구",
+        "region_latitude": "37.560379",
+        "region_longtitude": "126.822141",
+        "region_radius_m": 8000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 12,
+      "home_name": "(New)강서구 중심에 위치한 감각적인 리조트#1",
+      "home_capacity": 1,
+      "home_type": "다인실",
+      "home_building": "리조트",
+      "home_images": [
+        "https://images.unsplash.com/photo-1570054417025-2fa787c4c8f6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1604371204849-43ee087a05d3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTd8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1471880504582-cf7e63045303?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fGJhdGhyb29tfGVufDB8fDB8&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fGxpdmluZyUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1586798271399-1a410b7dd9fe?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fGtpdGNoZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1574788929530-350a44df8a3b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTkyfHxiYWxjb255fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 4,
+        "침대": 8,
+        "욕실": 3
+      },
+      "home_facilities": [
+        "샴푸",
+        "온수",
+        "헤어드라이어",
+        "세탁기",
+        "다리미",
+        "옷걸이",
+        "기본 조리도구(냄비, 후라이팬, 기름, 소금, 후추)",
+        "TV",
+        "냉장고",
+        "식기류",
+        "식기류",
+        "무선 인터넷(숙소 전체 사용 가능)",
+        "장기 숙박 가능(28일 이상 숙박 가능)"
+      ],
+      "home_latitude": "37.554177",
+      "home_longitutde": "126.847954",
+      "price": {
+        "1박비용": 64000,
+        "1인당가격증가율": 7000,
+        "청소비": 15000,
+        "서비스수수료": 20000,
+        "숙박세와수수료": 15000
+      },
+      "home_region": {
+        "region_name": "강서구",
+        "region_latitude": "37.560379",
+        "region_longtitude": "126.822141",
+        "region_radius_m": 8000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 13,
+      "home_name": "★Home Camping in seoul/강서구 위치/ 방역,소독진행중",
+      "home_capacity": 0,
+      "home_type": "호텔객실",
+      "home_building": "호텔",
+      "home_images": [
+        "https://images.unsplash.com/photo-1576675784201-0e142b423952?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODh8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1572891086295-6c1c7c476549?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fGJlZCUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/flagged/photo-1556438758-84625859c6b6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fGJhdGhyb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1575517112311-c371a9d614a8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzB8fGxpdmluZyUyMHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1600684388091-627109f3cd60?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fGtpdGNoZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1526604513386-7feecb6c734e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fGJhbGNvbnl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 3,
+        "침대": 6,
+        "욕실": 2
+      },
+      "home_facilities": [
+        "필수품목(비누, 화장지, 치약)",
+        "샴푸",
+        "헤어드라이어",
+        "주방(게스트가 요리를 할 수 있는 공간)",
+        "건조기",
+        "옷걸이",
+        "기본 조리도구(냄비, 후라이팬, 기름, 소금, 후추)",
+        "TV",
+        "전자레인지",
+        "전자레인지",
+        "에어컨",
+        "게스트 전용 출입문(별도의 출입로 또는 건물 입구)",
+        "업무 전용 공간",
+        "화재경보기(숙소에 화재경보기가 없습니다)"
+      ],
+      "home_latitude": "37.557613",
+      "home_longitutde": "126.857235",
+      "price": {
+        "1박비용": 50000,
+        "1인당가격증가율": 11000,
+        "청소비": 29000,
+        "서비스수수료": 20000,
+        "숙박세와수수료": 0
+      },
+      "home_region": {
+        "region_name": "강서구",
+        "region_latitude": "37.560379",
+        "region_longtitude": "126.822141",
+        "region_radius_m": 8000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 14,
+      "home_name": "★[강서구]★ 파격세일 -야경이 예쁜 깨끗한 고층 레지던스-코로나 걱정NO",
+      "home_capacity": 4,
+      "home_type": "호텔객실",
+      "home_building": "리조트",
+      "home_images": [
+        "https://images.unsplash.com/photo-1596462874675-a96de76c16e0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTQ4fHxiZWQlMjByb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1570572134645-37415323bc9f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTE0fHxiZWQlMjByb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1603825394520-49b3c0038c28?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzF8fGJhdGhyb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8bGl2aW5nJTIwcm9vbXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1505015920881-0f83c2f7c95e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTd8fGtpdGNoZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1590058582642-b130d1620a49?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTE4fHxiYWxjb255fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 3,
+        "침대": 3,
+        "욕실": 1
+      },
+      "home_facilities": [
+        "필수품목(비누, 화장지, 치약)",
+        "온수",
+        "샴푸",
+        "헤어드라이어",
+        "다리미",
+        "세탁기",
+        "가스레인지 또는 인덕션",
+        "전자레인지",
+        "기본 조리도구(냄비, 후라이팬, 기름, 소금, 후추)",
+        "냉장고",
+        "냉장고",
+        "에어컨",
+        "업무 전용 공간",
+        "디지털 도어록(게스트가 현관문 비밀번호를 입력하여 직접 체크인 합니다)"
+      ],
+      "home_latitude": "37.561825",
+      "home_longitutde": "126.821692",
+      "price": {
+        "1박비용": 63000,
+        "1인당가격증가율": 11000,
+        "청소비": 26000,
+        "서비스수수료": 0,
+        "숙박세와수수료": 25000
+      },
+      "home_region": {
+        "region_name": "강서구",
+        "region_latitude": "37.560379",
+        "region_longtitude": "126.822141",
+        "region_radius_m": 8000,
+        "region_zoom": 13
+      }
+    },
+    {
+      "home_id": 15,
+      "home_name": "#4▶비대면체크인, 호텔객실, 깔끔한 인테리어의 접근성 좋은 응암동 신축 저택",
+      "home_capacity": 1,
+      "home_type": "호텔객실",
+      "home_building": "저택",
+      "home_images": [
+        "https://images.unsplash.com/photo-1542474917-0d6c8c8446d0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTg0fHxiZWQlMjByb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1587614381634-068e97d007ad?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTE3fHxiZWQlMjByb29tfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8YmF0aHJvb218ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1486946255434-2466348c2166?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjN8fGxpdmluZyUyMHJvb218ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1518737003272-dac7c4760d5e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjh8fGtpdGNoZW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "https://images.unsplash.com/photo-1560448205-d82bf18b9bcf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YmFsY29ueXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      ],
+      "home_options": {
+        "침실": 4,
+        "침대": 8,
+        "욕실": 3
+      },
+      "home_facilities": [
+        "헤어드라이어",
+        "온수",
+        "필수품목(비누, 화장지, 치약)",
+        "샴푸",
+        "옷걸이",
+        "건조기",
+        "주방(게스트가 요리를 할 수 있는 공간)",
+        "다리미",
+        "필수품목(침대시트, 베개)",
+        "식기류",
+        "가스레인지 또는 인덕션",
+        "TV",
+        "TV",
+        "무선 인터넷(숙소 전체 사용 가능)",
+        "업무 전용 공간",
+        "게스트 전용 출입문(별도의 출입로 또는 건물 입구)"
+      ],
+      "home_latitude": "37.533165",
+      "home_longitutde": "126.857498",
+      "price": {
+        "1박비용": 79000,
+        "1인당가격증가율": 8000,
+        "청소비": 22000,
+        "서비스수수료": 10000,
+        "숙박세와수수료": 0
+      },
+      "home_region": {
+        "region_name": "강서구",
+        "region_latitude": "37.560379",
+        "region_longtitude": "126.822141",
+        "region_radius_m": 8000,
+        "region_zoom": 13
+      }
+    }
+  ]
+}
