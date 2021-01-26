@@ -10,7 +10,7 @@ const items = [
 
 const style = { width: "80px" };
 
-export default function Index() {
+export default function Index(props) {
   const [cart, setCart, { totalPrice, totalQuantity }] = useCart(items);
 
   return (

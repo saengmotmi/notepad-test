@@ -1,60 +1,38 @@
 import React, { useState, useRef } from "react";
-import aligoClient, { templateType } from "./axiosClient";
+import { Button } from "antd";
+import CardModal from "./CardModal";
 
 export default function Index() {
-  const [template, setTemplate] = useState("");
+  const [currentModal, setCurrentModal] = useState(0);
+  const [confirmLoading, setConfirmLoading] = useState(false);
+  const [modalText, setModalText] = useState("텍스트");
   const formRef = useRef({});
 
-  const handleForm = e => {
-    const { name, value } = e.target;
-    formRef.current[name] = value;
+  const showModal = e => {
+    const batch = e.currentTarget.dataset.batch;
+    setCurrentModal(+batch);
   };
 
-  const displayTemplate = async () => {
-    const { code, content, button } = await aligoClient.getTemplate(
-      templateType.callInfo
-    );
-
-    const parseTable = {
-      등록자명: formRef.current.name,
-      방문상담일시: formRef.current.date,
-      // 등록자명: "오종택",
-      // 방문상담일시: "오늘",
-      기수: "",
-      개강일: "",
-      사전스터디일시: "",
-    };
-
-    const REG_TEMPLATE = /#{(.*?)}/g;
-    const parsedStr = content.replace(
-      REG_TEMPLATE,
-      (_, matchStr) => parseTable[matchStr]
-    );
-
-    setTemplate({ code, content: parsedStr, button });
+  const value = {
+    currentModal,
+    confirmLoading,
+    modalText,
+    setCurrentModal,
+    setModalText,
+    formRef,
+    setConfirmLoading,
   };
 
   return (
     <div>
-      <button onClick={displayTemplate}>템플릿 가져오기</button>
-      <button onClick={() => aligoClient.sendSms(template)}>
-        문자 전송하기
-      </button>
-      <input
-        type="text"
-        name="name"
-        placeholder="방문자명"
-        onChange={handleForm}
-      />
-      <input
-        type="text"
-        name="date"
-        placeholder="방문상담일시"
-        onChange={handleForm}
-      />
-      {template.content?.split("\n").map((l, idx) => {
-        return <p key={idx}>{l}</p>;
-      })}
+      <Button type="primary" onClick={showModal} data-batch="23">
+        23기
+      </Button>
+      <Button type="primary" onClick={showModal} data-batch="24">
+        24기
+      </Button>
+      <CardModal batch={23} {...value} />
+      <CardModal batch={24} {...value} />
     </div>
   );
 }
