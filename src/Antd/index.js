@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import moment from "moment";
 import { Button, Checkbox, Col, Row, DatePicker } from "antd";
 
@@ -20,13 +20,13 @@ export default function Index() {
 
   const buttonTypeTodate = type => {
     const today = moment();
-    const startOf = () => today.clone().startOf(type);
-    const endOf = () => today.clone().endOf(type);
+    const startOf = today.clone().startOf(type);
+    const endOf = today.clone().endOf(type);
 
     const typeTable = {
       today: [today, today],
-      week: [startOf(), endOf()],
-      month: [startOf(), endOf()],
+      week: [startOf, endOf],
+      month: [startOf, endOf],
     };
 
     return typeTable[type];
