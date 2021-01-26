@@ -1,5 +1,7 @@
 import axios from "axios";
 
+export const REG_TEMPLATE = /#{(.*?)}/g;
+export const NOT_NUMBER_REGEXP = /[^0-9]/g;
 export const ALIGO_BASE_URL = "https://kakaoapi.aligo.in/akv10";
 export const SENDER_PHONE_NUM = "01029840401";
 export const TITLE = "제목";
@@ -8,6 +10,10 @@ export const USER_ID = "wecode";
 export const SENDER_KEY = "9f8909f6da9c9dd6431a5034b0e1891ce53a3562";
 export const encodeHeaders = {
   "Content-Type": "application/x-www-form-urlencoded",
+};
+
+const errorResponse = {
+  expiredToken: -107,
 };
 
 export const templateType = {
@@ -31,7 +37,7 @@ export const templateType = {
 };
 
 const URL = {
-  token: "/token/create/30/s/",
+  token: "/token/create/10/m/",
   template: "/template/list/",
   sms: "/alimtalk/send/",
 };
@@ -79,7 +85,14 @@ class AxiosClient {
     }
 
     const params = parseQs({ senderkey: SENDER_KEY });
-    const template = await this.client.post(URL.template, params);
+    let template = await this.client.post(URL.template, params);
+
+    // 토큰이 만료되었으면 갱신
+    if (template.data.code === errorResponse.expiredToken) {
+      await this.getToken();
+      template = await this.client.post(URL.template, params);
+    }
+
     const { templtCode, templtContent, buttons } = template.data.list[idx];
 
     return {
@@ -89,20 +102,24 @@ class AxiosClient {
     };
   };
 
-  sendSms = async ({ code, content, button }) => {
+  sendSms = async (template, form) => {
+    const { code, content, button } = template;
+    const { name, phoneNumber1, phoneNumber2, phoneNumber3 } = form;
+
+    const phoneNumber = phoneNumber1 + phoneNumber2 + phoneNumber3;
+
     const params = parseQs({
       senderkey: SENDER_KEY,
       tpl_code: code,
       sender: SENDER_PHONE_NUM,
-      receiver_1: "01041406734",
-      recvname_1: "오종택",
+      receiver_1: phoneNumber.replace(NOT_NUMBER_REGEXP, ""),
+      recvname_1: name,
       subject_1: "제목",
       message_1: content,
       button_1: JSON.stringify(button),
     });
 
-    const res = await this.client.post(URL.sms, params);
-    console.log(res);
+    // await this.client.post(URL.sms, params);
   };
 }
 
