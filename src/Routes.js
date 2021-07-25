@@ -24,6 +24,7 @@ import KakaoMap from "./KakaoMap";
 import Aligo from "./Aligo";
 import AntdTable from "./AntdEditableTable";
 import GoogleMap from "./GoogleMap";
+import DnD from "./DnD"
 
 // import { setContext } from "apollo-link-context";
 import { setContext } from "@apollo/client/link/context";
@@ -77,6 +78,7 @@ class Routes extends React.Component {
             <Route exact path="/aligo" component={Aligo} />
             <Route exact path="/antdTable" component={AntdTable} />
             <Route exact path="/googleMap" component={GoogleMap} />
+            <Route exact path="/dnd" component={DnD} />
           </Switch>
           {/* </ErrorCatcher> */}
         </Router>
